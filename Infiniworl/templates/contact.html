@@ -1,0 +1,48 @@
+<!--Name: Robert Alaniz Jr-->
+<!--Coding 05-->
+<!--Purpose: This creates the form submission text and button area of the contact form web page. This file is pulled to form the body of the contact.php file. It uses the main.css file in order to be styled.-->
+
+        <div class="body-div">
+            <div id="msg">
+                <br>
+            </div>
+            
+            
+            <h2>Enter your Information</h2>
+            <form id="names-form" name="names-form" action="email.php" method="post">
+                <div class="input-div">
+                    Name: <br>
+                    <input type="text" class="form-input" id="namebox" name="name" placeholder="Jack, Ana, Alex, Rob..." maxlength="64"><br>
+                </div>
+                <div class="input-div">
+                    Email: <br>
+                    <input type="text" class="form-input" id="emailbox" name="email" placeholder="example@email.com" maxlength="64"><br>
+                </div>
+                <div class="input-div">
+                    Re-Enter Email: <br>
+                    <input type="text" class="form-input" id="reemailbox" name="reemail" placeholder="example@email.com" maxlength="64"><br>
+                </div>
+                <div class="input-div">
+                    Subject: <br>
+                    <input type="text" class="form-input" id="subjectbox" name="subject" placeholder="Some subject" maxlength="64"><br>
+                </div>
+                <div class="input-div">
+                    Message: <br> <textarea type="text" class="textarea" id="messagebox" name="message" placeholder="Message" rows="10" maxlength="1000"></textarea><br>
+                </div>
+                    
+                    
+                    <div class="input-div">
+                        <!-- Notice the clear button is not an HTML clear button. It is a generic button
+                        to which we will attach a handler to make it work as a clear button. -->
+                        <button id="submit-button" type="submit" class="">Send</button>&nbsp;&nbsp;
+                        <button id="clear-button" type="button" class="">Clear</button>
+                    </div>
+                </form>
+                <br>
+                <br>
+            </div>
+        <!-- jQuery must be loaded before any other JS that uses jQuery -->
+        <script src="jquery.min.js"></script>
+        <!-- Place your JS at the bottom of the body like so -->
+        <script src="main.js"></script>
+        <script src="contact.js"></script>
